@@ -83,13 +83,16 @@ endmodule
 ```
 
 ## RTL realization :-
-![image](https://github.com/Raji1009/Experiment--02-Implementation-of-combinational-logic-/assets/89059861/f641d595-a84e-4d80-9082-a721e724ee09)
+![RTL](https://github.com/DilipDofy/Experiment--02-Implementation-of-combinational-logic-/assets/147223497/bda5d7bd-ae56-4a84-bdeb-fd4f494a159a)
+
 
 ## Truth table :-
-![image](https://github.com/Raji1009/Experiment--02-Implementation-of-combinational-logic-/assets/89059861/b569bbc1-d572-4fc8-81e3-8470c5f7be88)
+![Truth Table](https://github.com/DilipDofy/Experiment--02-Implementation-of-combinational-logic-/assets/147223497/9f401bcf-2be4-4814-8fcf-63b2a1fc29b6)
+
 
 ## Timing Diagram :-
-![image](https://github.com/Raji1009/Experiment--02-Implementation-of-combinational-logic-/assets/89059861/14a6b9c3-6847-41a5-8b04-837bd18bc4c2)
+![Timing Diagram](https://github.com/DilipDofy/Experiment--02-Implementation-of-combinational-logic-/assets/147223497/73791900-0342-44c0-b278-b0a8199c6668)
+
 
 ## Result:
 Thus the given logic functions are implemented using  and their operations are verified using Verilog programming.
