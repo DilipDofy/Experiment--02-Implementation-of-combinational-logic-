@@ -1,47 +1,73 @@
+```
 Name :- DILIP.M.P.
 Reg no :- 212223230048
+```
+# Exp-02 Implementation of combinational logic
+ 
+## AIM :-
+To implement the given logic function verify its operation in Quartus using Verilog programming.
+ F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D
+F2=xy’z+x’y’z+w’xy+wx’y+wxy
+ 
+### Equipments Required :-
+    Hardware – PCs, Cyclone II , USB flasher
+    Software – Quartus prime
 
-Exp-02 Implementation of combinational logic
+## Theory :-
+A combinational circuit is a circuit in which the output depends on the present
+combination of inputs. Combinational circuits are made up of logic gates. The output of
+each logic gate is determined by its logic function. Combinational circuits can be made
+using various logic gates, such as AND gates, OR gates, and NOT gates.
 
-AIM :-
-To implement the given logic function verify its operation in Quartus using Verilog programming. F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D F2=xy’z+x’y’z+w’xy+wx’y+wxy
+## Procedure :- 
+1. Create a New Project:
 
-Equipments Required :-
-Hardware – PCs, Cyclone II , USB flasher
-Software – Quartus prime
+Open Quartus and create a new project by selecting "File" > "New Project
+Wizard."
+Follow the wizard's instructions to set up your project, including specifying the
+project name, location, and target device (FPGA).
 
-Theory :-
-A combinational circuit is a circuit in which the output depends on the present combination of inputs. Combinational circuits are made up of logic gates. The output of each logic gate is determined by its logic function. Combinational circuits can be made using various logic gates, such as AND gates, OR gates, and NOT gates.
+2. Create a New Design File:
 
-Procedure :-
-Create a New Project:
-Open Quartus and create a new project by selecting "File" > "New Project Wizard." Follow the wizard's instructions to set up your project, including specifying the project name, location, and target device (FPGA).
+*Once the project is created, right-click on the project name in the Project Navigator
+and select "Add New File."
+*Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware
+description language.
 
-Create a New Design File:
-*Once the project is created, right-click on the project name in the Project Navigator and select "Add New File." *Choose "Verilog HDL File" or "VHDL File," depending on your chosen hardware description language.
+3. Write the Combinational Logic Code:
 
-Write the Combinational Logic Code:
-*Open the newly created Verilog or VHDL file and write the code for your combinational logic.
+*Open the newly created Verilog or VHDL file and write the code for your
+combinational logic.
 
 4.Compile the Project:
 
-*To compile the project, click on "Processing" > "Start Compilation" in the menu. *Quartus will analyze your code, synthesize it into a netlist, and perform optimizations based on your target FPGA device.
+*To compile the project, click on "Processing" > "Start Compilation" in the
+menu.
+*Quartus will analyze your code, synthesize it into a netlist, and perform
+optimizations based on your target FPGA device.
 
 5.Analyze and Fix Errors:
 
-*If there are any errors or warnings during the compilation process, Quartus will display them in the Messages window.
+*If there are any errors or warnings during the compilation process,
+Quartus will display them in the Messages window.
 
-*Review and fix any issues in your code if necessary. *View the RTL diagram.
+*Review and fix any issues in your code if necessary.
+*View the RTL diagram.
 
-6.Verification:
+6.Verification: 
 
-*Click on "File" > "New" > "Verification/Debugging Files" > "University Program VWF".
+*Click on "File" > "New" > "Verification/Debugging Files" > "University
+Program VWF".
 
-*Once Waveform is created Right Click on the Input/Output Panel > " Insert Node or Bus" > Click on Node Finder > Click On "List" > Select All.
+*Once Waveform is created Right Click on the Input/Output Panel > " Insert
+Node or Bus" > Click on Node Finder > Click On "List" > Select All.
 
-*Give the Input Combinations according to the Truth Table and then simulate the Output Waveform.
+*Give the Input Combinations according to the Truth Table and then simulate
+the Output Waveform.
 
-Program :-
+
+## Program :-
+```
 module ex2(A,B,C,D,F1);
 input A,B,C,D;
 output F1;
@@ -54,18 +80,16 @@ assign x5=(B)&(~C)&(D);
 
 assign F1=x1|x2|x3|x4|x5;
 endmodule
+```
 
-RTL realization :-
-![RTL](https://github.com/DilipDofy/Experiment--02-Implementation-of-combinational-logic-/assets/147223497/b4472407-1b92-41fa-bcbe-8696ad164d11)
+## RTL realization :-
+![image](https://github.com/Raji1009/Experiment--02-Implementation-of-combinational-logic-/assets/89059861/f641d595-a84e-4d80-9082-a721e724ee09)
 
+## Truth table :-
+![image](https://github.com/Raji1009/Experiment--02-Implementation-of-combinational-logic-/assets/89059861/b569bbc1-d572-4fc8-81e3-8470c5f7be88)
 
-Truth table :-
-![Truth Table](https://github.com/DilipDofy/Experiment--02-Implementation-of-combinational-logic-/assets/147223497/59cbf076-69c5-455a-84e4-20f1912f0e9d)
+## Timing Diagram :-
+![image](https://github.com/Raji1009/Experiment--02-Implementation-of-combinational-logic-/assets/89059861/14a6b9c3-6847-41a5-8b04-837bd18bc4c2)
 
-
-Timing Diagram :-
-![Timing Diagram](https://github.com/DilipDofy/Experiment--02-Implementation-of-combinational-logic-/assets/147223497/92c2391a-53be-4ccd-acd9-862ef143cb24)
-
-
-Result:
-Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
+## Result:
+Thus the given logic functions are implemented using  and their operations are verified using Verilog programming.
